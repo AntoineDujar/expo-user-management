@@ -8,7 +8,6 @@ const Expense = ({ item }) => {
       <View />
       <View>
         <Text>{item.title}</Text>
-        <Text>{item.date}</Text>
       </View>
       <Text>${item.amount.toFixed(2)}</Text>
     </>

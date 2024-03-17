@@ -108,7 +108,7 @@ export default function Account({ session }: { session: Session }) {
         />
       </View>
       <View style={styles.verticallySpaced}>
-        <Persist />
+        <Persist key={session.user.id} session={session} />
       </View>
 
       <View style={styles.verticallySpaced}>
