@@ -97,7 +97,7 @@ const App = observer(({ session }: { session: Session }) => {
     <View>
       <FlatList
         data={expenses}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <Expense item={item} />}
       />
       <Button title="Add Expense" onPress={addExpense} />

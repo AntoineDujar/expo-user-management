@@ -2,7 +2,12 @@ import { StyleSheet, Text, View } from "react-native";
 
 import React, { useEffect } from "react";
 
-const Expense = ({ item }) => {
+interface ExpenseItem {
+  title: string;
+  amount: number;
+}
+
+const Expense = ({ item }: { item: ExpenseItem }) => {
   return (
     <>
       <View />
